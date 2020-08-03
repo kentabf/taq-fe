@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Hover from './Hover'
+import Hover from './hover'
 
 const styles = {
   container: {
