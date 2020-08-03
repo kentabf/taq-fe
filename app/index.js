@@ -5,13 +5,11 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 import Loading from './components/loading'
 import Nav from './components/nav'
 import { ThemeProvider } from './contexts/theme'
-
-
 import './index.css'
 
-const DEV_ENV = false
+const BACKEND_LOCAL = false
 
-window.backend_url = DEV_ENV? 'http://127.0.0.1:8000' : 'https://taq-be.herokuapp.com'
+window.backend_url = BACKEND_LOCAL? 'http://127.0.0.1:8000' : 'https://taq-be.herokuapp.com'
 
 const Lobby = React.lazy(() => import('./components/lobby'))
 const CreateRoom = React.lazy(() => import('./components/create_room'))

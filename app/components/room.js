@@ -172,7 +172,7 @@ export default class Room extends React.Component {
 				        
 				        {this.isLoading() && <Loading text='Fetching room'/>}
 
-				  		<ErrorMessage errorMessage={error} defaultInstruction='Please join a room first' />
+				  		<ErrorMessage errorMessage={error} defaultInstruction='Please join a room first' noError={true}/>
 
 				  		{this.renderRoomActions()}
 
