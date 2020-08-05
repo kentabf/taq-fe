@@ -20,10 +20,12 @@ li {
 	--bg-primary-dark: rgb(31, 31, 31);
 	--bg-secondary-dark: rgb(45, 45, 45);
 	--text-dark: rgb(210, 210, 210);
+	--title-dark: rgb(60, 60, 60);
 
 	--bg-primary-light: rgb(255, 255, 255);
 	--bg-secondary-light: rgb(209, 209, 209);
 	--text-light: rgb(45, 45, 45);
+	--title-light: rgb(195, 195, 195);
 
 	--red-primary: rgba(187, 46, 31, 1.0); /*NOTE: if you change this, change navlink highlight*/
 	--red-secondary: rgba(187, 46, 31, 0.4);
@@ -69,11 +71,30 @@ li {
 	/*font-weight: bold;*/
 }
 
+.title {
+	/*text-align: center;*/
+	font-size: 50px;
+	font-weight: bold;
+}
 .title-light{
+	color: var(--title-light)
+}
+.title-dark{
+	color: var(--title-dark)
+}
+
+.room-title {
+  display: inline;
+  text-align: center;
+  float: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+.room-title-light{
 	color: var(--red-primary);
 }
 
-.title-dark{
+.room-title-dark{
 	color: var(--red-primary);
 }
 
@@ -103,7 +124,7 @@ li {
 }
 
 .outer-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 50px;
 }
@@ -127,12 +148,6 @@ li {
   font-weight: bold;
   text-decoration: none;
   color: inherit;
-}
-
-.room-title {
-  display: inline;
-  text-align: center;
-  float: center;
 }
 
 .room-action{
@@ -294,7 +309,45 @@ li {
 	padding: 3px;
 }
 
+.queue-title{
+	color: var(--red-primary);
+	font-weight: bold;
+}
+
+.empty-warning{
+	font-size: 12px;
+	font-style: italic;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
+}
+
+.keyword{
+	display: inline-block;
+	border-radius: 2px;
+}
+.keyword-bold{
+	font-weight: bold;
+}
+.keyword-light{
+	background-color: var(--bg-secondary-dark);
+	color: var(--text-dark);
+}
+.keyword-dark{
+	background-color: var(--bg-secondary-light);
+	color: var(--text-light);
+}
+
+.about{
+	font-size: 12px;
+}
+
+ul.about-list{
+	padding: 5px;
+}
+ul.about-list li{
+	list-style-type: circle;
+	padding-bottom: 3px;
 }

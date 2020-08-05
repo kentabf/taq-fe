@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { FaHome, FaDoorOpen, FaHammer} from 'react-icons/fa'
+import { FaHome, FaDoorOpen, FaHammer, FaInfo} from 'react-icons/fa'
 
 import { ThemeConsumer } from '../contexts/theme'
 
@@ -46,6 +46,17 @@ export default function Nav () {
 								>
 									Create New Room&nbsp;
 									<FaHammer size={16} />
+								</NavLink>
+							</li>
+							<li>
+								<NavLink 
+									to='/about' 
+									exact
+									activeStyle={activeStyle}
+									className='nav-link'
+								>
+									About taq&nbsp;
+									<FaInfo size={16} />
 								</NavLink>
 							</li>
 

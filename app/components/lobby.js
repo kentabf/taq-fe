@@ -70,7 +70,7 @@ export default class Lobby extends React.Component {
 				<ThemeConsumer>
 					{({ theme }) => (
 						<div className={`inner-container center bg-${theme}`}>
-							<h1 className={`title-${theme}`}>
+							<h1 className={`room-title room-title-${theme}`}>
 								{meta.title}
 							</h1>
 							<ErrorMessage errorMessage={this.state.errorMessage} />

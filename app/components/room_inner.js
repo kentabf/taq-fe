@@ -12,13 +12,11 @@ export default class RoomInner extends React.Component {
 	}
 
 	handlePost = (postURL, data) => {
-		console.log("handlepost outer called")
 		fetch(window.backend_url+postURL, {
 			method: 'POST',
 			credentials: 'include',
 			body: data
 		}).then(response => {
-			console.log("handlepost then called")
 			if (response.status === 200) {
 				this.props.reload()
 			} else if (response.status === 401){

@@ -80,7 +80,7 @@ export default class QueueGrid extends React.Component {
 						<div className='buffer' />
 						<div>
 							<div className={`room-panel-detail queue-grid`}>
-								Queue
+								<div className='queue-title'>Queue</div>
 								<ul>
 									{room.queue.map((user) => {
 										return (
@@ -90,6 +90,7 @@ export default class QueueGrid extends React.Component {
 										)
 									})}
 								</ul>
+								{room.queue.length===0 && <div className={`empty-warning`}>Queue is empty</div>}
 							</div>
 						</div>
 					</React.Fragment>

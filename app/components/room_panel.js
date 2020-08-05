@@ -43,7 +43,7 @@ export default class RoomPanel extends React.Component {
 	}
 
 	renderShow = () => {
-		const { stCode, taCode } = this.state.room.roomInfo
+		const { stCode, taCode, roomId } = this.state.room.roomInfo
 
 		return (
 			<ThemeConsumer>
@@ -54,6 +54,14 @@ export default class RoomPanel extends React.Component {
 							<button onClick={this.handleCodeShow}>
 								Hide codes
 							</button>
+							<div className='outer'>
+								<div className='left'>
+									Room Id:
+								</div>
+								<div className='right'>
+									{roomId}
+								</div>
+							</div>
 							<div className='outer'>
 								<div className='left'>
 									Students: 
@@ -86,7 +94,7 @@ export default class RoomPanel extends React.Component {
 			<ThemeConsumer>
 				{({ theme }) => (
 					<div className='room-panel-detail'>
-						<h3>{userName}</h3>
+						<div className='room-panel-user-name'>{userName}</div>
 						{attendingWithName && <div>Currently attending with {attendingWithName}</div>}
 						{codeShow && this.renderShow()}
 						{!codeShow && this.renderHide()}
@@ -104,7 +112,7 @@ export default class RoomPanel extends React.Component {
 			<ThemeConsumer>
 				{({ theme }) => (
 					<div className='room-panel-detail'>
-						<h3>{userName}</h3>
+						<div className='room-panel-user-name'>{userName}</div>
 						{dateimeQueued && <div>Currently in queue regarding "{queueTopic}"</div>}
 						{!dateimeQueued && <div>Currently not in queue</div>}
 						{attendingWithName && <div>{attendingWithName} is attending to you</div>}
@@ -132,7 +140,7 @@ export default class RoomPanel extends React.Component {
 				{({ theme }) => (
 					<div>
 						<div>
-							<h1 className={`room-title title-${theme}`}>{roomInfo.roomName}</h1>
+							<div className={`room-title room-title-${theme}`}>{roomInfo.roomName}</div>
 						</div>
 						{isTa && this.renderTa()}
 						{!isTa && this.renderSt()}
