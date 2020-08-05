@@ -46,18 +46,18 @@ export default class About extends React.Component {
 								</h3>
 								<p>
 								When looking at the how-to section below, you can follow with an example.
-								Look at `CS 000 Example Lab Help`:
+								Look at `CS 000 Example Office Hours`:
 								</p>
 								<div>
 									<ul className='about-list'>
 										<li>
-											Room ID `example_room_id`
+											Room ID `eg_room_id`
 										</li>
 										<li>
-											TA code `example_ta_code`
+											TA code `eg_ta_code`
 										</li>
 										<li>
-											Student code `example_st_code`
+											Student code `eg_st_code`
 										</li>
 									</ul>
 								</div>
