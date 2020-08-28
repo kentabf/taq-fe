@@ -132,9 +132,6 @@ export default class RoomPanel extends React.Component {
 		const { roomInfo, userInfo } = this.state.room
 		const isTa = userInfo.isTa
 
-		// TODO: add a "leave room" button
-		// TODO: add the
-
 		return (
 			<ThemeConsumer>
 				{({ theme }) => (

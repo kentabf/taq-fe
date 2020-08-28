@@ -62,7 +62,6 @@ ReactDOM.render(
 )
 
 /*
-
 TODO:
 - see if it works with chrome
 */
