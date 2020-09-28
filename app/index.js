@@ -8,6 +8,7 @@ import Title from './components/title'
 import Nav from './components/nav'
 import './index.css'
 
+// Set true if developing with local backend. When pushing to production, set to false.
 const BACKEND_LOCAL = false
 
 window.backend_url = BACKEND_LOCAL? 'http://127.0.0.1:8000' : 'https://taq-be.herokuapp.com'

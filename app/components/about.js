@@ -46,7 +46,9 @@ export default class About extends React.Component {
 								</h3>
 								<p>
 								When looking at the how-to section below, you can follow with an example.
-								Look at `CS 000 Example Office Hours`:
+								This room has already been populated with fake examples – copy and paste the following credentials
+								to join the room 
+								`CS 000 Example Office Hours`:
 								</p>
 								<div>
 									<ul className='about-list'>
